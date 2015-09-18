@@ -41,3 +41,7 @@ Change this values to suit your needs
 		"champion" => "v1.2/champion/{id}",
 		"item" => "v1.2/item/{id}"
 	);
+	
+# #ToDo
+Complete requests/static requests list with all parameters
+Add dynamic configuration on class constructor
