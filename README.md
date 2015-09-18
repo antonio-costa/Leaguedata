@@ -3,6 +3,25 @@ A PHP class to handle Riot's (League Of Legends) API.
 
 I am very nooby php self-taught programmer, so this class may not be very well optimized. I put this up because I needed one  class to simplify my api requests and all libraries I found were a bit too complex, just had too many features that I didn't really need. Also I found it fun to make and improved my programming skills.
 
+# Usage example
+It's the simplest I could imagine. Just create a new instance of the class, use getData/getStaticData method with the request and parameters (listed below) you wish and then get the data through the responses body.
+
+**Example:**
+
+	$lolapi = new Leaguedata();
+	$lolapi->getData('summonerByName', array("summonerName" => "thonymc"));
+	var_dump($lolapi->response->body); // ta dah!! an array with my summoner's information!
+
+**Checking for errors:**
+
+	$lolapi = new Leaguedata();
+	$lolapi->getStaticData('champion');
+	
+	if($lolapi->response->code == 200)
+		var_dump($lolapi->response->body); // All champions retrieved
+	else
+		echo 'An error ocurred: #'.$lolapi->response->code;
+
 # Methods
 - getData($request, $data); // makes a api request. $data must be an associative array
 - getStaticData($request, $data); // makes an static data api request. $data must be an associative array
@@ -26,10 +45,7 @@ Change this values to suit your needs
 	private $callsTenMinutes = 500; // max calls per ten minutes (if memcache enabled)
 	private $timeout = 2; // time to sleep if memcached reached its limit
 	private $debugMode = false;
-# Usage example
-	$lolapi = new Leaguedata();
-	$lolapi->getStaticData('champion'); // no data array means leave it blank so it returns all champions
-	var_dump($lolapi->response->body); // ta dah!! an array with all the champions in League of Legends!
+
 # Requests available
 This lists is not complete! Some requests are missing and some miss their queries! They are easy to add if you want to.
 
@@ -60,4 +76,5 @@ This lists is not complete! Some requests are missing and some miss their querie
 # #ToDo
 - Complete requests/static requests list with all parameters
 - Add dynamic configuration on class constructor
+- Add data dragon image URL generator!
 - Add a method for observer matches which have completely different URL's. It's easy to do but since I don't need them I didn't bother
