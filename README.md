@@ -8,6 +8,7 @@ A PHP class to handle Riot's (League Of Legends) API
 	setRegion($region); // sets the region to make the requests
 # Configuration
 Change this values to suit your needs
+
 	private $region = "euw";
 	private $key = "";
 	private $autoRetry = true; // if rate limit exceeded, should this the script auto retry after "Retry After" (from response header) seconds
