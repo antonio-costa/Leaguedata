@@ -32,6 +32,7 @@ Change this values to suit your needs
 	var_dump($lolapi->response->body); // ta dah!! an array with all the champions in League of Legends!
 # Requests available
 This lists is not complete! Some requests are missing and some miss their queries! They are easy to add if you want to.
+
 	private $requests = array(
 		"summoner" => "v1.4/summoner/{summonerIds}",
 		"summoner-by-name" => "v1.4/summoner/by-name/{summonerNames}",
