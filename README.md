@@ -1,4 +1,4 @@
-# riot-api-data
+# Leaguedata
 A PHP class to handle Riot's (League Of Legends) API.
 
 I am very nooby php self-taught programmer, so this class may not be very well optimized. I put this up because I needed one  class to simplify my api requests and all libraries I found were a bit too complex, just had too many features that I didn't really need. Also I found it fun to make and improved my programming skills.
