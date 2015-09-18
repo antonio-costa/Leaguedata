@@ -9,7 +9,7 @@ It's the simplest I could imagine. Just create a new instance of the class, use 
 **Example:**
 
 	$lolapi = new Leaguedata();
-	$lolapi->getData('summonerByName', array("summonerName" => "thonymc"));
+	$lolapi->getData('summoner-by-name', array("summonerName" => "thonymc"));
 	var_dump($lolapi->response->body); // ta dah!! an array with my summoner's information!
 
 **Checking for errors:**
