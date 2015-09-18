@@ -9,11 +9,11 @@ I am very nooby php self-taught programmer, so this class may not be very well o
 - getShards($region); // get region information. Will retrieve all in no parameter is specified
 - setRegion($region); // sets the region to make the requests
 - response(); // access the response from the last api call
-	- response()->code // gives the header response code. Such as 200 for success or 429 for Rate Limit Exceeded
-	- response()->header // returns the full header as a string
-	- response()->retryAfter // seconds to wait until it's OK to make anoother request in case 429 was returned
-	- response()->body // the actual response. returns an stdClass()
-	- 
+ - response()->code // gives the header response code. Such as 200 for success or 429 for Rate Limit Exceeded
+ - response()->header // returns the full header as a string
+ - response()->retryAfter // seconds to wait until it's OK to make anoother request in case 429 was returned
+ - response()->body // the actual response. returns an stdClass()
+
 For header codes and the body responses check developer.riotgames.com
 # Configuration
 Change this values to suit your needs
