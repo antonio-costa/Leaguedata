@@ -2,10 +2,12 @@
 A PHP class to handle Riot's (League Of Legends) API
 
 # Methods
-	getData($request, $data); // makes a api request. $data must be an associative array
-	getStaticData($request, $data); // makes an static data api request. $data must be an associative array
-	getShards($region); // get region information. Will retrieve all in no parameter is specified
-	setRegion($region); // sets the region to make the requests
+- getData($request, $data); // makes a api request. $data must be an associative array
+- getStaticData($request, $data); // makes an static data api request. $data must be an associative array
+- getShards($region); // get region information. Will retrieve all in no parameter is specified
+- setRegion($region); // sets the region to make the requests
+
+
 # Configuration
 Change this values to suit your needs
 
@@ -43,5 +45,5 @@ Change this values to suit your needs
 	);
 	
 # #ToDo
-Complete requests/static requests list with all parameters
-Add dynamic configuration on class constructor
+- Complete requests/static requests list with all parameters
+- Add dynamic configuration on class constructor
