@@ -183,7 +183,15 @@ class Leaguedata {
 	public function response() {
 		return $this->response;
 	}
-
+	/* ----------------------------------------------------
+	*	Set current region
+	*	
+	*	@param $region string
+	*
+	------------------------------------------------------- */
+	public function setRegion($region) {
+		$this->region = $region;
+	}
 	/* ----------------------------------------------------
 	*	Initializes memcache
 	*
