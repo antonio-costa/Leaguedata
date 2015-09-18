@@ -6,7 +6,16 @@ A PHP class to handle Riot's (League Of Legends) API
 	getStaticData($request, $data); // makes an static data api request. $data must be an associative array
 	getShards($region); // get region information. Will retrieve all in no parameter is specified
 	setRegion($region); // sets the region to make the requests
-
+# Configuration
+Change this values to suit your needs
+	private $region = "euw";
+	private $key = "";
+	private $autoRetry = true; // if rate limit exceeded, should this the script auto retry after "Retry After" (from response header) seconds
+	private $memcacheEnabled = false; // rate limiter with memcache to avoid getting your key blacklisted. Recommended!
+	private $callsTenSeconds = 10; // max calls per ten seconds (if memcache enabled)
+	private $callsTenMinutes = 500; // max calls per ten minutes (if memcache enabled)
+	private $timeout = 2; // time to sleep if memcached reached its limit
+	private $debugMode = false;
 # Requests available
 	private $requests = array(
 		"summoner" => "v1.4/summoner/{summonerIds}",
