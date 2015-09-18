@@ -47,7 +47,7 @@ Change this values to suit your needs
 	private $debugMode = false;
 
 # Requests available
-This lists is not complete! Some requests are missing and some miss their queries! They are easy to add if you want to.
+This lists is not complete! Some requests are missing and some miss their queries! They are easy to add if you want to. Obviously, everything between {} is treated as a parameter, if not specified in getData() method array it will be left blank. If you miss a mandatory parameter riot's api will retrieve an error. Most of non-query parameters are mandatory, you can check all of this in riot's developer website.
 
 	private $requests = array(
 		"summoner" => "v1.4/summoner/{summonerIds}",
