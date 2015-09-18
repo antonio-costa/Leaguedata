@@ -31,13 +31,13 @@ class Leaguedata {
 	private $memcache;
 
 	private $region = "euw";
-	private $key = "448ee896-f0fb-4f04-93e5-1a9cc1594683";
+	private $key = "";
 	private $autoRetry = true;
-	private $memcacheEnabled = true;
+	private $memcacheEnabled = false;
 	private $callsTenSeconds = 10;
 	private $callsTenMinutes = 500;
 	private $timeout = 2;
-	private $debugMode = true;
+	private $debugMode = false;
 
 	public function __construct() {
 		$this->ch = curl_init();
