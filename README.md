@@ -26,7 +26,12 @@ Change this values to suit your needs
 	private $callsTenMinutes = 500; // max calls per ten minutes (if memcache enabled)
 	private $timeout = 2; // time to sleep if memcached reached its limit
 	private $debugMode = false;
+# Usage example
+	$lolapi = new Leaguedata();
+	$lolapi->getStaticData('champion'); // no data array means leave it blank so it returns all champions
+	var_dump($lolapi->response->body); // ta dah!! an array with all the champions in League of Legends!
 # Requests available
+This lists is not complete! Some requests are missing and some miss their queries! They are easy to add if you want to.
 	private $requests = array(
 		"summoner" => "v1.4/summoner/{summonerIds}",
 		"summoner-by-name" => "v1.4/summoner/by-name/{summonerNames}",
@@ -54,3 +59,4 @@ Change this values to suit your needs
 # #ToDo
 - Complete requests/static requests list with all parameters
 - Add dynamic configuration on class constructor
+- Add a method for observer matches which have completely different URL's. It's easy to do but since I don't need them I didn't bother
