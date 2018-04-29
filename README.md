@@ -1,7 +1,7 @@
 # Leaguedata
 A PHP class to handle Riot's (League Of Legends) API.
 
-I am very nooby php self-taught programmer, so this class may not be very well optimized. I put this up because I needed one  class to simplify my api requests and all libraries I found were a bit too complex, just had too many features that I didn't really need. Also I found it fun to make and improved my programming skills.
+I put this up because I needed one  class to simplify my api requests and all libraries I found were a bit too complex, just had too many features that I didn't really need. Also I found it fun to make and improved my programming skills.
 
 # Usage example
 It's the simplest I could imagine. Just create a new instance of the class, use getData/getStaticData method with the request and parameters (listed below) you wish and then get the data through the responses body.
